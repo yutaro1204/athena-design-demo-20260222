@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1200 3200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="3200" fill="#ffffff"/>
+
+  <!-- Header/Navigation -->
+  <g id="header">
+    <rect x="0" y="0" width="1200" height="80" fill="#ffffff" stroke="#000000" stroke-width="1"/>
+    <!-- Logo -->
+    <rect x="40" y="20" width="120" height="40" fill="#f5f5f5" stroke="#000000" stroke-width="1"/>
+    <text x="100" y="45" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#000000">LOGO</text>
+    <!-- Navigation Links -->
+    <text x="900" y="45" font-family="Arial, sans-serif" font-size="14" fill="#000000">Models</text>
+    <text x="980" y="45" font-family="Arial, sans-serif" font-size="14" fill="#000000">Library</text>
+    <text x="1060" y="45" font-family="Arial, sans-serif" font-size="14" fill="#000000">About</text>
+    <text x="1130" y="45" font-family="Arial, sans-serif" font-size="14" fill="#000000">Cart</text>
+  </g>
+
+  <!-- Hero Section -->
+  <g id="hero">
+    <rect x="0" y="80" width="1200" height="500" fill="#f5f5f5" stroke="#000000" stroke-width="1"/>
+    <text x="600" y="250" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#000000">HERO SECTION</text>
+    <!-- Hero Title -->
+    <text x="600" y="290" font-family="Arial, sans-serif" font-size="42" font-weight="bold" text-anchor="middle" fill="#000000">Premium 3D Models</text>
+    <text x="600" y="330" font-family="Arial, sans-serif" font-size="42" font-weight="bold" text-anchor="middle" fill="#000000">for Designers &amp; Creators</text>
+    <!-- Hero Description -->
+    <text x="600" y="370" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#333333">High-quality 3D assets ready for your next project</text>
+    <!-- CTA Button -->
+    <rect x="500" y="400" width="200" height="50" fill="#000000" stroke="#000000" stroke-width="2"/>
+    <text x="600" y="432" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#ffffff">Browse Models</text>
+  </g>
+
+  <!-- Featured Models Grid (3 columns) -->
+  <g id="featured-models">
+    <!-- Section Title -->
+    <text x="40" y="650" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#000000">Featured Models</text>
+
+    <!-- Row 1 -->
+    <g id="model-card-1">
+      <rect x="40" y="680" width="360" height="320" fill="#ffffff" stroke="#000000" stroke-width="1"/>
+      <rect x="50" y="690" width="340" height="240" fill="#e0e0e0" stroke="#000000" stroke-width="1"/>
+      <text x="220" y="820" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#666666">[3D Model Preview]</text>
+      <text x="60" y="960" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#000000">Modern Chair</text>
+      <text x="60" y="985" font-family="Arial, sans-serif" font-size="14" fill="#666666">Furniture | $49</text>
+    </g>
+
+    <g id="model-card-2">
+      <rect x="420" y="680" width="360" height="320" fill="#ffffff" stroke="#000000" stroke-width="1"/>
+      <rect x="430" y="690" width="340" height="240" fill="#e0e0e0" stroke="#000000" stroke-width="1"/>
+      <text x="600" y="820" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#666666">[3D Model Preview]</text>
+      <text x="440" y="960" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#000000">Architectural Elements</text>
+      <text x="440" y="985" font-family="Arial, sans-serif" font-size="14" fill="#666666">Architecture | $89</text>
+    </g>
+
+    <g id="model-card-3">
+      <rect x="800" y="680" width="360" height="320" fill="#ffffff" stroke="#000000" stroke-width="1"/>
+      <rect x="810" y="690" width="340" height="240" fill="#e0e0e0" stroke="#000000" stroke-width="1"/>
+      <text x="980" y="820" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#666666">[3D Model Preview]</text>
+      <text x="820" y="960" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#000000">Product Mockup</text>
+      <text x="820" y="985" font-family="Arial, sans-serif" font-size="14" fill="#666666">Product Design | $39</text>
+    </g>
+
+    <!-- Row 2 -->
+    <g id="model-card-4">
+      <rect x="40" y="1020" width="360" height="320" fill="#ffffff" stroke="#000000" stroke-width="1"/>
+      <rect x="50" y="1030" width="340" height="240" fill="#e0e0e0" stroke="#000000" stroke-width="1"/>
+      <text x="220" y="1160" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#666666">[3D Model Preview]</text>
+      <text x="60" y="1300" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#000000">Interior Scene</text>
+      <text x="60" y="1325" font-family="Arial, sans-serif" font-size="14" fill="#666666">Interior | $129</text>
+    </g>
+
+    <g id="model-card-5">
+      <rect x="420" y="1020" width="360" height="320" fill="#ffffff" stroke="#000000" stroke-width="1"/>
+      <rect x="430" y="1030" width="340" height="240" fill="#e0e0e0" stroke="#000000" stroke-width="1"/>
+      <text x="600" y="1160" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#666666">[3D Model Preview]</text>
+      <text x="440" y="1300" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#000000">Lighting Fixtures</text>
+      <text x="440" y="1325" font-family="Arial, sans-serif" font-size="14" fill="#666666">Lighting | $59</text>
+    </g>
+
+    <g id="model-card-6">
+      <rect x="800" y="1020" width="360" height="320" fill="#ffffff" stroke="#000000" stroke-width="1"/>
+      <rect x="810" y="1030" width="340" height="240" fill="#e0e0e0" stroke="#000000" stroke-width="1"/>
+      <text x="980" y="1160" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#666666">[3D Model Preview]</text>
+      <text x="820" y="1300" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#000000">Nature Assets</text>
+      <text x="820" y="1325" font-family="Arial, sans-serif" font-size="14" fill="#666666">Environment | $69</text>
+    </g>
+  </g>
+
+  <!-- Categories Section -->
+  <g id="categories">
+    <text x="40" y="1430" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#000000">Browse by Category</text>
+
+    <g id="category-1">
+      <rect x="40" y="1460" width="270" height="180" fill="#f5f5f5" stroke="#000000" stroke-width="1"/>
+      <text x="175" y="1550" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#000000">Furniture</text>
+      <text x="175" y="1575" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#666666">450+ models</text>
+    </g>
+
+    <g id="category-2">
+      <rect x="330" y="1460" width="270" height="180" fill="#f5f5f5" stroke="#000000" stroke-width="1"/>
+      <text x="465" y="1550" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#000000">Architecture</text>
+      <text x="465" y="1575" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#666666">320+ models</text>
+    </g>
+
+    <g id="category-3">
+      <rect x="620" y="1460" width="270" height="180" fill="#f5f5f5" stroke="#000000" stroke-width="1"/>
+      <text x="755" y="1550" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#000000">Characters</text>
+      <text x="755" y="1575" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#666666">280+ models</text>
+    </g>
+
+    <g id="category-4">
+      <rect x="910" y="1460" width="270" height="180" fill="#f5f5f5" stroke="#000000" stroke-width="1"/>
+      <text x="1045" y="1550" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#000000">Vehicles</text>
+      <text x="1045" y="1575" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#666666">190+ models</text>
+    </g>
+  </g>
+
+  <!-- Features Section -->
+  <g id="features">
+    <rect x="0" y="1700" width="1200" height="400" fill="#f5f5f5" stroke="#000000" stroke-width="1"/>
+    <text x="600" y="1770" font-family="Arial, sans-serif" font-size="32" font-weight="bold" text-anchor="middle" fill="#000000">Why Choose Our Models?</text>
+
+    <g id="feature-1">
+      <circle cx="250" cy="1880" r="40" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+      <text x="250" y="1890" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#000000">&#10003;</text>
+      <text x="250" y="1960" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#000000">High Quality</text>
+      <text x="250" y="1985" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#666666">Professional grade assets</text>
+    </g>
+
+    <g id="feature-2">
+      <circle cx="600" cy="1880" r="40" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+      <text x="600" y="1890" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#000000">&#9889;</text>
+      <text x="600" y="1960" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#000000">Ready to Use</text>
+      <text x="600" y="1985" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#666666">Optimized for all platforms</text>
+    </g>
+
+    <g id="feature-3">
+      <circle cx="950" cy="1880" r="40" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+      <text x="950" y="1890" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" fill="#000000">&#8734;</text>
+      <text x="950" y="1960" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#000000">Commercial License</text>
+      <text x="950" y="1985" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#666666">Use in unlimited projects</text>
+    </g>
+  </g>
+
+  <!-- New Releases Section -->
+  <g id="new-releases">
+    <text x="40" y="2180" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#000000">New Releases</text>
+
+    <g id="new-model-1">
+      <rect x="40" y="2210" width="360" height="320" fill="#ffffff" stroke="#000000" stroke-width="1"/>
+      <rect x="50" y="2220" width="340" height="240" fill="#e0e0e0" stroke="#000000" stroke-width="1"/>
+      <text x="220" y="2350" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#666666">[3D Model Preview]</text>
+      <!-- New Badge -->
+      <rect x="340" y="2230" width="40" height="20" fill="#000000"/>
+      <text x="360" y="2244" font-family="Arial, sans-serif" font-size="10" font-weight="bold" text-anchor="middle" fill="#ffffff">NEW</text>
+      <text x="60" y="2490" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#000000">Minimalist Desk Setup</text>
+      <text x="60" y="2515" font-family="Arial, sans-serif" font-size="14" fill="#666666">Workspace | $79</text>
+    </g>
+
+    <g id="new-model-2">
+      <rect x="420" y="2210" width="360" height="320" fill="#ffffff" stroke="#000000" stroke-width="1"/>
+      <rect x="430" y="2220" width="340" height="240" fill="#e0e0e0" stroke="#000000" stroke-width="1"/>
+      <text x="600" y="2350" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#666666">[3D Model Preview]</text>
+      <!-- New Badge -->
+      <rect x="720" y="2230" width="40" height="20" fill="#000000"/>
+      <text x="740" y="2244" font-family="Arial, sans-serif" font-size="10" font-weight="bold" text-anchor="middle" fill="#ffffff">NEW</text>
+      <text x="440" y="2490" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#000000">Organic Planters</text>
+      <text x="440" y="2515" font-family="Arial, sans-serif" font-size="14" fill="#666666">Decor | $45</text>
+    </g>
+
+    <g id="new-model-3">
+      <rect x="800" y="2210" width="360" height="320" fill="#ffffff" stroke="#000000" stroke-width="1"/>
+      <rect x="810" y="2220" width="340" height="240" fill="#e0e0e0" stroke="#000000" stroke-width="1"/>
+      <text x="980" y="2350" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#666666">[3D Model Preview]</text>
+      <!-- New Badge -->
+      <rect x="1100" y="2230" width="40" height="20" fill="#000000"/>
+      <text x="1120" y="2244" font-family="Arial, sans-serif" font-size="10" font-weight="bold" text-anchor="middle" fill="#ffffff">NEW</text>
+      <text x="820" y="2490" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#000000">Tech Gadgets Pack</text>
+      <text x="820" y="2515" font-family="Arial, sans-serif" font-size="14" fill="#666666">Electronics | $99</text>
+    </g>
+  </g>
+
+  <!-- CTA Section -->
+  <g id="cta">
+    <rect x="0" y="2600" width="1200" height="300" fill="#000000"/>
+    <text x="600" y="2700" font-family="Arial, sans-serif" font-size="36" font-weight="bold" text-anchor="middle" fill="#ffffff">Start Creating Today</text>
+    <text x="600" y="2740" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#ffffff">Join thousands of designers using our premium 3D models</text>
+    <rect x="450" y="2770" width="300" height="50" fill="#ffffff" stroke="#ffffff" stroke-width="2"/>
+    <text x="600" y="2802" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#000000">Get Started - It's Free</text>
+  </g>
+
+  <!-- Footer -->
+  <g id="footer">
+    <rect x="0" y="2900" width="1200" height="300" fill="#f5f5f5" stroke="#000000" stroke-width="1"/>
+
+    <!-- Footer Columns -->
+    <g id="footer-col-1">
+      <text x="100" y="2970" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#000000">Product</text>
+      <text x="100" y="3000" font-family="Arial, sans-serif" font-size="14" fill="#666666">Browse Models</text>
+      <text x="100" y="3025" font-family="Arial, sans-serif" font-size="14" fill="#666666">Categories</text>
+      <text x="100" y="3050" font-family="Arial, sans-serif" font-size="14" fill="#666666">New Releases</text>
+      <text x="100" y="3075" font-family="Arial, sans-serif" font-size="14" fill="#666666">Pricing</text>
+    </g>
+
+    <g id="footer-col-2">
+      <text x="350" y="2970" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#000000">Company</text>
+      <text x="350" y="3000" font-family="Arial, sans-serif" font-size="14" fill="#666666">About Us</text>
+      <text x="350" y="3025" font-family="Arial, sans-serif" font-size="14" fill="#666666">Contact</text>
+      <text x="350" y="3050" font-family="Arial, sans-serif" font-size="14" fill="#666666">Careers</text>
+      <text x="350" y="3075" font-family="Arial, sans-serif" font-size="14" fill="#666666">Blog</text>
+    </g>
+
+    <g id="footer-col-3">
+      <text x="600" y="2970" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#000000">Resources</text>
+      <text x="600" y="3000" font-family="Arial, sans-serif" font-size="14" fill="#666666">Documentation</text>
+      <text x="600" y="3025" font-family="Arial, sans-serif" font-size="14" fill="#666666">Tutorials</text>
+      <text x="600" y="3050" font-family="Arial, sans-serif" font-size="14" fill="#666666">Support</text>
+      <text x="600" y="3075" font-family="Arial, sans-serif" font-size="14" fill="#666666">License</text>
+    </g>
+
+    <g id="footer-col-4">
+      <text x="850" y="2970" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#000000">Connect</text>
+      <text x="850" y="3000" font-family="Arial, sans-serif" font-size="14" fill="#666666">Twitter</text>
+      <text x="850" y="3025" font-family="Arial, sans-serif" font-size="14" fill="#666666">Instagram</text>
+      <text x="850" y="3050" font-family="Arial, sans-serif" font-size="14" fill="#666666">LinkedIn</text>
+      <text x="850" y="3075" font-family="Arial, sans-serif" font-size="14" fill="#666666">YouTube</text>
+    </g>
+
+    <!-- Copyright -->
+    <line x1="40" y1="3120" x2="1160" y2="3120" stroke="#000000" stroke-width="1"/>
+    <text x="600" y="3160" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#666666">&#169; 2026 3D Model Studio. All rights reserved.</text>
+  </g>
+</svg>

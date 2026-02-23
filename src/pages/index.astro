@@ -1,0 +1,294 @@
+---
+import Layout from '../layouts/Layout.astro'
+
+const featuredModels = [
+  { title: 'Modern Chair', meta: 'Furniture | $49', image: '/images/card-modern-chair.png' },
+  {
+    title: 'Architectural Elements',
+    meta: 'Architecture | $89',
+    image: '/images/card-architectural-elements.png',
+  },
+  {
+    title: 'Product Mockup',
+    meta: 'Product Design | $39',
+    image: '/images/card-product-mockup.png',
+  },
+  { title: 'Interior Scene', meta: 'Interior | $129', image: '/images/card-interior-scene.png' },
+  {
+    title: 'Lighting Fixtures',
+    meta: 'Lighting | $59',
+    image: '/images/card-lighting-fixtures.png',
+  },
+  { title: 'Nature Assets', meta: 'Environment | $69', image: '/images/card-nature-assets.png' },
+]
+
+const categories = [
+  { name: 'Furniture', count: '450+ models', image: '/images/cat-furniture.png' },
+  { name: 'Architecture', count: '320+ models', image: '/images/cat-architecture.png' },
+  { name: 'Characters', count: '280+ models', image: '/images/cat-characters.png' },
+  { name: 'Vehicles', count: '190+ models', image: '/images/cat-vehicles.png' },
+]
+
+const newReleases = [
+  { title: 'Minimalist Desk Setup', meta: 'Workspace | $79', image: '/images/new-desk-setup.png' },
+  { title: 'Organic Planters', meta: 'Decor | $45', image: '/images/new-organic-planters.png' },
+  {
+    title: 'Tech Gadgets Pack',
+    meta: 'Electronics | $99',
+    image: '/images/new-tech-gadgets.png',
+  },
+]
+
+const footerColumns = [
+  { title: 'Product', links: ['Browse Models', 'Categories', 'New Releases', 'Pricing'] },
+  { title: 'Company', links: ['About Us', 'Contact', 'Careers', 'Blog'] },
+  { title: 'Resources', links: ['Documentation', 'Tutorials', 'Support', 'License'] },
+  { title: 'Connect', links: ['Twitter', 'Instagram', 'LinkedIn', 'YouTube'] },
+]
+---
+
+<Layout>
+  <div class="min-h-screen flex flex-col bg-white font-primary">
+    <!-- Header -->
+    <header
+      class="flex items-center justify-between h-[60px] lg:h-[80px] px-4 lg:px-10 border-b border-black"
+    >
+      <img
+        src="/images/logo.png"
+        alt="3D Model Library"
+        class="w-[120px] h-[35px] lg:w-[180px] lg:h-[50px] object-contain"
+      />
+      <nav class="flex items-center gap-4 lg:gap-6">
+        <a href="#" class="text-[10px] lg:text-sm text-black">Models</a>
+        <a href="#" class="hidden lg:block text-sm text-black">Library</a>
+        <a href="#" class="hidden lg:block text-sm text-black">About</a>
+        <a href="#" class="text-[10px] lg:text-sm text-black">Cart</a>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="relative flex flex-col items-center justify-center h-[400px] lg:h-[500px] px-4 lg:px-10 py-10 lg:py-20 gap-[10px] lg:gap-3 bg-cover bg-center"
+      style="background-image: url('/images/hero-bg.png');"
+    >
+      <div class="absolute inset-0 bg-black/20"></div>
+      <h1
+        class="relative text-[28px] lg:text-[42px] font-bold text-white text-center leading-tight drop-shadow-lg"
+      >
+        <span class="lg:hidden">Premium 3D<br />Models<br />for Designers</span>
+        <span class="hidden lg:inline">Premium 3D Models<br />for Designers & Creators</span>
+      </h1>
+      <p class="relative text-[13px] lg:text-base text-white text-center drop-shadow-lg">
+        <span class="lg:hidden">High-quality 3D assets<br />ready for your next project</span>
+        <span class="hidden lg:inline">High-quality 3D assets ready for your next project</span>
+      </p>
+      <a
+        href="#"
+        class="relative mt-2 flex items-center justify-center w-[200px] h-[50px] bg-black text-white text-sm lg:text-base font-bold border-2 border-black shadow-lg"
+      >
+        Browse Models
+      </a>
+    </section>
+
+    <!-- Featured Models -->
+    <section class="px-4 lg:px-10 py-[30px] lg:py-10 flex flex-col gap-4 lg:gap-5">
+      <h2 class="text-2xl lg:text-[32px] font-bold text-black">Featured Models</h2>
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-5">
+        {
+          featuredModels.map((model) => (
+            <div class="border border-black bg-white flex flex-col p-[10px] pb-0">
+              <div class="h-[200px] lg:h-[240px] border border-black overflow-hidden">
+                <img
+                  src={model.image}
+                  alt={model.title}
+                  class="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <div class="flex flex-col justify-end gap-1 p-[10px] flex-1">
+                <span class="text-lg font-bold text-black">{model.title}</span>
+                <span class="text-sm text-[#666666]">{model.meta}</span>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </section>
+
+    <!-- Browse by Category -->
+    <section class="px-4 lg:px-10 py-[30px] lg:py-10 flex flex-col gap-4 lg:gap-5">
+      <h2 class="text-2xl lg:text-[32px] font-bold text-black">Browse by Category</h2>
+      <div class="grid grid-cols-1 lg:grid-cols-4 gap-4 lg:gap-5">
+        {
+          categories.map((cat) => (
+            <div class="relative h-[120px] lg:h-[180px] border border-black overflow-hidden">
+              <img
+                src={cat.image}
+                alt={cat.name}
+                class="absolute inset-0 w-full h-full object-cover"
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-black/25 flex flex-col items-center justify-center gap-2">
+                <span class="text-base lg:text-lg font-bold text-white drop-shadow-md">
+                  {cat.name}
+                </span>
+                <span class="text-xs lg:text-sm text-white drop-shadow-md">{cat.count}</span>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section
+      class="flex flex-col items-center gap-6 lg:gap-10 px-4 lg:px-10 py-10 lg:py-[60px] bg-[#f5f5f5] border-y border-black"
+    >
+      <h2 class="text-2xl lg:text-[32px] font-bold text-black text-center">
+        Why Choose Our Models?
+      </h2>
+      <div class="flex flex-col lg:flex-row lg:justify-around w-full gap-8 lg:gap-0">
+        <!-- Feature 1: High Quality -->
+        <div class="flex flex-col items-center gap-3 lg:gap-4 w-full lg:w-[280px]">
+          <div
+            class="w-[60px] h-[60px] lg:w-[80px] lg:h-[80px] rounded-full border-2 border-black bg-white flex items-center justify-center"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-6 h-6 lg:w-8 lg:h-8"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M20 6 9 17l-5-5"></path>
+            </svg>
+          </div>
+          <span class="text-base lg:text-lg font-bold text-black text-center">High Quality</span>
+          <span class="text-xs lg:text-sm text-[#666666] text-center"
+            >Professional grade assets</span
+          >
+        </div>
+
+        <!-- Feature 2: Ready to Use -->
+        <div class="flex flex-col items-center gap-3 lg:gap-4 w-full lg:w-[280px]">
+          <div
+            class="w-[60px] h-[60px] lg:w-[80px] lg:h-[80px] rounded-full border-2 border-black bg-white flex items-center justify-center"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-6 h-6 lg:w-8 lg:h-8"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"
+              ></path>
+            </svg>
+          </div>
+          <span class="text-base lg:text-lg font-bold text-black text-center">Ready to Use</span>
+          <span class="text-xs lg:text-sm text-[#666666] text-center"
+            >Optimized for all platforms</span
+          >
+        </div>
+
+        <!-- Feature 3: Commercial License (desktop only) -->
+        <div class="hidden lg:flex flex-col items-center gap-4 w-[280px]">
+          <div
+            class="w-[80px] h-[80px] rounded-full border-2 border-black bg-white flex items-center justify-center"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-8 h-8"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M12 12c-2-2.67-6-2.67-6 0s4 4.67 6 2"></path>
+              <path d="M12 12c2 2.67 6 2.67 6 0s-4-4.67-6-2"></path>
+            </svg>
+          </div>
+          <span class="text-lg font-bold text-black text-center">Commercial License</span>
+          <span class="text-sm text-[#666666] text-center">Use in unlimited projects</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- New Releases (desktop only) -->
+    <section class="hidden lg:flex flex-col gap-5 px-10 py-10">
+      <h2 class="text-[32px] font-bold text-black">New Releases</h2>
+      <div class="grid grid-cols-3 gap-5">
+        {
+          newReleases.map((item) => (
+            <div class="border border-black bg-white flex flex-col p-[10px] pb-0">
+              <div class="relative h-[240px] border border-black overflow-hidden">
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  class="w-full h-full object-cover"
+                  loading="lazy"
+                />
+                <div class="absolute top-[10px] right-[10px] bg-black px-2 py-1 flex items-center justify-center">
+                  <span class="text-[10px] font-bold text-white">NEW</span>
+                </div>
+              </div>
+              <div class="flex flex-col justify-end gap-1 p-[10px] flex-1">
+                <span class="text-lg font-bold text-black">{item.title}</span>
+                <span class="text-sm text-[#666666]">{item.meta}</span>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </section>
+
+    <!-- CTA Section (desktop only) -->
+    <section
+      class="hidden lg:flex flex-col items-center justify-center h-[300px] bg-black gap-4 px-10 py-[60px]"
+    >
+      <h2 class="text-4xl font-bold text-white text-center">Start Creating Today</h2>
+      <p class="text-base text-white text-center">
+        Join thousands of designers using our premium 3D models
+      </p>
+      <a
+        href="#"
+        class="flex items-center justify-center w-[300px] h-[50px] bg-white text-black text-base font-bold border-2 border-white"
+      >
+        Get Started - It's Free
+      </a>
+    </section>
+
+    <!-- Footer (desktop only) -->
+    <footer
+      class="hidden lg:flex flex-col gap-10 px-10 pt-[60px] pb-10 bg-[#f5f5f5] border-t border-black"
+    >
+      <div class="flex justify-between">
+        {
+          footerColumns.map((col) => (
+            <div class="flex flex-col gap-3">
+              <span class="text-lg font-bold text-black">{col.title}</span>
+              {col.links.map((link) => (
+                <a href="#" class="text-sm text-[#666666]">
+                  {link}
+                </a>
+              ))}
+            </div>
+          ))
+        }
+      </div>
+      <hr class="border-black" />
+      <p class="text-xs text-[#666666] text-center">
+        &copy; 2026 3D Model Studio. All rights reserved.
+      </p>
+    </footer>
+  </div>
+</Layout>
