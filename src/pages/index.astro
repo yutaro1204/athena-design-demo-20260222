@@ -1,41 +1,57 @@
 ---
 import Layout from '../layouts/Layout.astro'
 
+import logoImg from '../assets/images/logo.webp'
+import heroBgImg from '../assets/images/hero-bg.webp'
+import cardModernChair from '../assets/images/card-modern-chair.webp'
+import cardArchitecturalElements from '../assets/images/card-architectural-elements.webp'
+import cardProductMockup from '../assets/images/card-product-mockup.webp'
+import cardInteriorScene from '../assets/images/card-interior-scene.webp'
+import cardLightingFixtures from '../assets/images/card-lighting-fixtures.webp'
+import cardNatureAssets from '../assets/images/card-nature-assets.webp'
+import catFurniture from '../assets/images/cat-furniture.webp'
+import catArchitecture from '../assets/images/cat-architecture.webp'
+import catCharacters from '../assets/images/cat-characters.webp'
+import catVehicles from '../assets/images/cat-vehicles.webp'
+import newDeskSetup from '../assets/images/new-desk-setup.webp'
+import newOrganicPlanters from '../assets/images/new-organic-planters.webp'
+import newTechGadgets from '../assets/images/new-tech-gadgets.webp'
+
 const featuredModels = [
-  { title: 'Modern Chair', meta: 'Furniture | $49', image: '/images/card-modern-chair.png' },
+  { title: 'Modern Chair', meta: 'Furniture | $49', image: cardModernChair.src },
   {
     title: 'Architectural Elements',
     meta: 'Architecture | $89',
-    image: '/images/card-architectural-elements.png',
+    image: cardArchitecturalElements.src,
   },
   {
     title: 'Product Mockup',
     meta: 'Product Design | $39',
-    image: '/images/card-product-mockup.png',
+    image: cardProductMockup.src,
   },
-  { title: 'Interior Scene', meta: 'Interior | $129', image: '/images/card-interior-scene.png' },
+  { title: 'Interior Scene', meta: 'Interior | $129', image: cardInteriorScene.src },
   {
     title: 'Lighting Fixtures',
     meta: 'Lighting | $59',
-    image: '/images/card-lighting-fixtures.png',
+    image: cardLightingFixtures.src,
   },
-  { title: 'Nature Assets', meta: 'Environment | $69', image: '/images/card-nature-assets.png' },
+  { title: 'Nature Assets', meta: 'Environment | $69', image: cardNatureAssets.src },
 ]
 
 const categories = [
-  { name: 'Furniture', count: '450+ models', image: '/images/cat-furniture.png' },
-  { name: 'Architecture', count: '320+ models', image: '/images/cat-architecture.png' },
-  { name: 'Characters', count: '280+ models', image: '/images/cat-characters.png' },
-  { name: 'Vehicles', count: '190+ models', image: '/images/cat-vehicles.png' },
+  { name: 'Furniture', count: '450+ models', image: catFurniture.src },
+  { name: 'Architecture', count: '320+ models', image: catArchitecture.src },
+  { name: 'Characters', count: '280+ models', image: catCharacters.src },
+  { name: 'Vehicles', count: '190+ models', image: catVehicles.src },
 ]
 
 const newReleases = [
-  { title: 'Minimalist Desk Setup', meta: 'Workspace | $79', image: '/images/new-desk-setup.png' },
-  { title: 'Organic Planters', meta: 'Decor | $45', image: '/images/new-organic-planters.png' },
+  { title: 'Minimalist Desk Setup', meta: 'Workspace | $79', image: newDeskSetup.src },
+  { title: 'Organic Planters', meta: 'Decor | $45', image: newOrganicPlanters.src },
   {
     title: 'Tech Gadgets Pack',
     meta: 'Electronics | $99',
-    image: '/images/new-tech-gadgets.png',
+    image: newTechGadgets.src,
   },
 ]
 
@@ -54,7 +70,7 @@ const footerColumns = [
       class="flex items-center justify-between h-[60px] lg:h-[80px] px-4 lg:px-10 border-b border-black"
     >
       <img
-        src="/images/logo.png"
+        src={logoImg.src}
         alt="3D Model Library"
         class="w-[120px] h-[35px] lg:w-[180px] lg:h-[50px] object-contain"
       />
@@ -69,7 +85,7 @@ const footerColumns = [
     <!-- Hero Section -->
     <section
       class="relative flex flex-col items-center justify-center h-[400px] lg:h-[500px] px-4 lg:px-10 py-10 lg:py-20 gap-[10px] lg:gap-3 bg-cover bg-center"
-      style="background-image: url('/images/hero-bg.png');"
+      style={`background-image: url('${heroBgImg.src}');`}
     >
       <div class="absolute inset-0 bg-black/20"></div>
       <h1
